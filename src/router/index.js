@@ -5,11 +5,13 @@ import Work from '../pages/Work.vue'
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/project/:id', component: Project },
-  { path: '/work/:id', component: Work }
+  { path: '/project', component: Project },
+  { path: '/work', component: Work }
 ]
 
-export default createRouter({
+const router = createRouter({
   history: createWebHistory(),
   routes
 })
+
+export default router
