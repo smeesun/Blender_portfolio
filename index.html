@@ -1,13 +1,17 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Vue & Three.js Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <div id="canvas-container"></div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
