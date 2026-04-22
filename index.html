@@ -25,7 +25,7 @@
 
     /* ロゴ */
     .logo {
-      height: 60px;
+      height: 300px;
     }
     
   </style>
@@ -42,8 +42,10 @@
       <model-viewer
         src="assets/models/cocoa.seikakunagenk.glb"
         auto-rotate
-        camera-controls
-        style="width: 300px; height: 150px;">
+        rotation-per-second="10deg"
+        interaction-policy="none"
+        camera-controls="false"
+        style="width: 500px; height: 500px;">
       </model-viewer>
     </div>
   </div>
