@@ -1,6 +1,6 @@
 const { createApp, ref, onMounted } = Vue;
 
-createApp({
+const app = createApp({
     setup() {
         const title = ref('My 3D Scene');
 
@@ -10,4 +10,8 @@ createApp({
 
         return { title };
     }
-}).mount('#app');
+});
+
+app.config.compilerOptions.isCustomElement = (tag) => tag === 'model-viewer';
+
+app.mount('#app');
