@@ -228,49 +228,50 @@
         style="width: 500px; height: 500px;">
       </model-viewer>
     </div>
-  </div>
+  
 
   <!-- ===== ギャラリー ===== -->
-<div class="gallery">
-
-  <div class="item fade-up delay-1" onclick="openModal('img1.jpg')">
-    <div class="circle" style="background-image:url('img1.jpg')"></div>
-    <div class="title">マシュマロ</div>
-  </div>
-
-  <div class="item fade-up delay-2" onclick="openModal('img2.jpg')">
-    <div class="circle" style="background-image:url('img2.jpg')"></div>
-    <div class="title">作品2</div>
-  </div>
-
-  <div class="item fade-up delay-3" onclick="openModal('img3.jpg')">
-    <div class="circle" style="background-image:url('img3.jpg')"></div>
-    <div class="title">作品3</div>
-  </div>
-
-</div>
-
-<!-- ===== モーダル ===== -->
-<div class="modal" id="modal">
-  <div class="modal-content">
-
-    <img id="modal-img">
-
-    <h2 id="modal-title"></h2>
-    <p id="modal-desc"></p>
-
-    <div class="info">
-      ⏱ 制作時間：<span id="modal-time"></span><br>
-      🛠 使用ツール：Blender
+  <div class="gallery">
+  
+    <div class="item fade-up delay-1" onclick="openModal('img1.jpg')">
+      <div class="circle" style="background-image:url('img1.jpg')"></div>
+      <div class="title">マシュマロ</div>
     </div>
-
-    <div class="point">
-      💡 こだわりポイント<br>
-      <span id="modal-point"></span>
+  
+    <div class="item fade-up delay-2" onclick="openModal('img2.jpg')">
+      <div class="circle" style="background-image:url('img2.jpg')"></div>
+      <div class="title">作品2</div>
     </div>
-
-    <div class="close" onclick="closeModal()">閉じる</div>
-
+  
+    <div class="item fade-up delay-3" onclick="openModal('img3.jpg')">
+      <div class="circle" style="background-image:url('img3.jpg')"></div>
+      <div class="title">作品3</div>
+    </div>
+  
+  </div>
+  
+  <!-- ===== モーダル ===== -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+  
+      <img id="modal-img">
+  
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+  
+      <div class="info">
+        ⏱ 制作時間：<span id="modal-time"></span><br>
+        🛠 使用ツール：Blender
+      </div>
+  
+      <div class="point">
+        💡 こだわりポイント<br>
+        <span id="modal-point"></span>
+      </div>
+  
+      <div class="close" onclick="closeModal()">閉じる</div>
+  
+    </div>
   </div>
 </div>
 
